@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstprap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="mainForCard mt-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-10 col-md-8 col-lg-5 mx-auto">
+                  <div class="card">
+                  <div class="card-header">
+                    Диспетчер задач
+                  </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Введите новую задачу</h5>
+                          <form name="addTask">
+                              <div class="row">
+                                  <div class="col">
+                                      <input type="text" class="form-control" placeholder="Заголовок задачи" name="inputTitile">
+                                  </div>
+                                  <div class="w-100"></div>
+                                  <div class="col mt-1">
+                                      <input type="text" class="form-control" placeholder="Задача" name="inputBody">
+                                  </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-1">Submit</button>
+                          </form>
+                      </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="forList mt-5">
+        <div class="container">
+            <div class="row rowForShowTask">
+                <div class="col-12  colForShowTask">
+                    <div class="btn-group d-block" role="group" aria-label="ShowButtons">
+                        <button class="btn btn btn-outline-danger border showAllBtn">Все задачи</button>
+                        <button class="btn btn btn-outline-danger border  showCompletedBtn">Завершенные задачи</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row rowForListGroup">
+                <div class="col">
+                    <ul class="list-group" id="ulTaskList">
+                          <!--<li class="list-group-item align-items-center flex-wrap mt-2 d-none">
+                              <div class="row">
+                                  <div class="col-12 d-flex">
+                                      <div class="btn-group ml-auto" role="group" aria-label="taskButtons">
+                                            <button class="btn btn btn-outline-danger border completeBtn">Завершить задачу</button>
+                                            <button class="btn btn btn-outline-danger border deleteBtn ">Удалить задачу</button>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                        <h5 class="task-title mt-1 mw-100">Lorem ipsum doloio.</h5>
+                                  </div>
+                                  <div class="col-12 mh-100">
+                                      <p class="mt-2">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores autem dicta est, eum, impedit ipsum,
+                                            iure modi praesentium quaerat quidem quis rerum sunt! Ducimus ea error esse impedit odio.
+                                      </p>
+                                  </div>
+                              </div>
+                          </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
