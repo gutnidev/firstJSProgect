@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstprap/bootstrap.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="mainForCard mt-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-10 col-md-8 col-lg-5 mx-auto">
+                  <div class="card">
+                  <div class="card-header">
+                    Диспетчер задач
+                  </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Введите новую задачу</h5>
+                          <form name="addTask">
+                              <div class="row">
+                                  <div class="col">
+                                      <input type="text" class="form-control" placeholder="Заголовок задачи" name="inputTitile">
+                                  </div>
+                                  <div class="w-100"></div>
+                                  <div class="col mt-1">
+                                      <input type="text" class="form-control" placeholder="Задача" name="inputBody">
+                                  </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-1">Submit</button>
+                          </form>
+                      </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="forList mt-5">
+        <div class="container">
+            <div class="row rowForShowTask">
+                <div class="col-12  colForShowTask">
+                    <div class="btn-group d-block" role="group" aria-label="ShowButtons">
+                        <button class="btn btn btn-outline-danger border showAllBtn">Все задачи</button>
+                        <button class="btn btn btn-outline-danger border  showCompletedBtn">Завершенные задачи</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row rowForListGroup">
+                <div class="col">
+                    <ul class="list-group" id="ulTaskList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+
+  </body>
+</html>
